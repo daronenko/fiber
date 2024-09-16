@@ -1,0 +1,9 @@
+Makefile.local
+build*
+.ccache/
+.idea
+.vscode
+.DS_Store
+
+third_party/*
+!third_party/CMakeLists.txt

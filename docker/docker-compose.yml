@@ -1,0 +1,27 @@
+version: "3.9"
+
+services:
+  fiber-container:
+    build: .
+    privileged: true
+    cap_add:
+      - SYS_PTRACE
+    stdin_open: true
+    tty: true
+    environment:
+      CC: "/usr/bin/clang-17"
+      CXX: "/usr/bin/clang++-17"
+      CCACHE_DIR: /fiber/.ccache
+      CCACHE_HASHDIR: ""
+      CCACHE_NOHASHDIR: ""
+      CCACHE_PREFIX: ""
+      CCACHE_SIZE: ""
+      CMAKE_OPTS: ""
+      CORES_DIR: /cores
+      MAKE_OPTS: ""
+      CMAKE_COMMON_FLAGS: ""
+    volumes:
+      - ..:/fiber:rw
+    working_dir: /fiber
+    entrypoint:
+      - docker/tools/run_as_user.sh
