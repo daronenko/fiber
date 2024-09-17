@@ -7,7 +7,7 @@
 
 #include <cstdint>
 
-namespace exe::sched {
+namespace fiber::sched {
 
 // Single-threaded task queue
 
@@ -53,4 +53,4 @@ class RunLoop : public task::IScheduler {
   wheels::IntrusiveForwardList<task::TaskBase> tasks_;
 };
 
-}  // namespace exe::sched
+}  // namespace fiber::sched

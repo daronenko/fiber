@@ -1,6 +1,8 @@
 #include "run_loop.hpp"
 
-namespace exe::sched {
+#include <fiber/sched/task/task.hpp>
+
+namespace fiber::sched {
 
 void RunLoop::Submit(task::TaskBase* task) {
   tasks_.PushBack(task);
@@ -26,4 +28,4 @@ size_t RunLoop::Run() {
   return completed;
 }
 
-}  // namespace exe::sched
+}  // namespace fiber::sched
