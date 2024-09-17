@@ -1,10 +1,9 @@
 #pragma once
 
-#include <fiber/sched/intrusive/blocking_queue.hpp>
-
+#include <fiber/sync/wait_group.hpp>
 #include <fiber/sched/task/task.hpp>
 #include <fiber/sched/task/scheduler.hpp>
-#include <fiber/sync/wait_group.hpp>
+#include <fiber/sched/intrusive/blocking_queue.hpp>
 
 #include <thread>
 #include <vector>
@@ -41,7 +40,7 @@ class ThreadPool : public task::IScheduler {
   void JoinWorkers();
 
  private:
-  IntrusiveUnboundedBlockingQueue<task::TaskBase> tasks_;
+  intrusive::IntrusiveUnboundedBlockingQueue<task::TaskBase> tasks_;
 
   size_t workers_count_;
   std::vector<std::thread> workers_;

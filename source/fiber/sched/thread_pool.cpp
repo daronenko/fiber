@@ -3,6 +3,8 @@
 #include <wheels/core/panic.hpp>
 #include <wheels/core/exception.hpp>
 
+#include <cassert>
+
 namespace fiber::sched {
 
 ////////////////////////////////////////////////////////////////////////////////
