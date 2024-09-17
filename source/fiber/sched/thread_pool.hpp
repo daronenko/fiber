@@ -40,7 +40,7 @@ class ThreadPool : public task::IScheduler {
   void JoinWorkers();
 
  private:
-  intrusive::IntrusiveUnboundedBlockingQueue<task::TaskBase> tasks_;
+  intrusive::UnboundedBlockingQueue<task::TaskBase> tasks_;
 
   size_t workers_count_;
   std::vector<std::thread> workers_;
