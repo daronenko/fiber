@@ -13,7 +13,6 @@ struct ITask {
 
 // Intrusive task
 struct TaskBase : ITask,
-                  wheels::IntrusiveForwardListNode<TaskBase> {
-};
+                  wheels::IntrusiveForwardListNode<TaskBase> {};
 
 }  // namespace fiber::sched::task
