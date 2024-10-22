@@ -13,7 +13,7 @@ namespace fiber::sched::intrusive {
 // Intrusive unbounded blocking multi-producers/multi-consumers (MPMC) queue
 
 template <typename T>
-class IntrusiveUnboundedBlockingQueue {
+class UnboundedBlockingQueue {
   using Node = wheels::IntrusiveForwardListNode<T>;
 
  public:

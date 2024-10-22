@@ -59,3 +59,17 @@ FetchContent_Declare(
         GIT_TAG master
 )
 FetchContent_MakeAvailable(function2)
+
+# --------------------------------------------------------------------
+
+# Modern formatting library
+
+project_log("FetchContent: fmt")
+
+FetchContent_Declare(
+        fmt
+        GIT_REPOSITORY https://github.com/fmtlib/fmt.git
+        GIT_TAG 10.2.1
+)
+FetchContent_MakeAvailable(fmt)
+
