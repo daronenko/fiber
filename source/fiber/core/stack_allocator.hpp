@@ -5,10 +5,10 @@
 #include <optional>
 #include <vector>
 
-namespace fiber::core {
+namespace fiber {
 
 Stack AllocateStack();
 
 void ReleaseStack(Stack);
 
-}  // namespace fiber::core
+}  // namespace fiber

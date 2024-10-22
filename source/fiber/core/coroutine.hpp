@@ -6,7 +6,7 @@
 #include <sure/context.hpp>
 #include <function2/function2.hpp>
 
-namespace fiber::core {
+namespace fiber {
 
 class Coroutine : private sure::ITrampoline {
  public:
@@ -34,4 +34,4 @@ class Coroutine : private sure::ITrampoline {
   sure::ExecutionContext parent_ctx_;
 };
 
-}  // namespace fiber::core
+}  // namespace fiber

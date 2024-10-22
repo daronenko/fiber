@@ -2,8 +2,8 @@
 
 #include <fiber/sched/task/scheduler.hpp>
 
-namespace fiber::core {
+namespace fiber {
 
 using IScheduler = sched::task::IScheduler;
 
-}  // namespace fiber::core
+}  // namespace fiber

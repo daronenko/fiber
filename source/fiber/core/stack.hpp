@@ -2,8 +2,8 @@
 
 #include <sure/stack/mmap.hpp>
 
-namespace fiber::core {
+namespace fiber {
 
 using Stack = ::sure::MmapStack;
 
-}  // namespace fiber::core
+}  // namespace fiber

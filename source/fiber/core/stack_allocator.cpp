@@ -1,7 +1,7 @@
 #include "stack_allocator.hpp"
 #include "stack.hpp"
 
-namespace fiber::core {
+namespace fiber {
 
 ////////////////////////////////////////////////////////////////////////////////
 
@@ -60,4 +60,4 @@ Stack AllocateStack() {
 void ReleaseStack(Stack) {
 }
 
-}  // namespace fiber::core
+}  // namespace fiber

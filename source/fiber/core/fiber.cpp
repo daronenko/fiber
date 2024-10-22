@@ -7,7 +7,7 @@
 
 #include <cstdlib>
 
-namespace fiber::core {
+namespace fiber {
 
 ////////////////////////////////////////////////////////////////////////////////
 
@@ -53,4 +53,4 @@ Fiber& Fiber::Self() {
   return *current_fiber;
 }
 
-}  // namespace fiber::core
+}  // namespace fiber

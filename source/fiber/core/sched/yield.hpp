@@ -1,11 +1,7 @@
 #pragma once
 
-#include <fiber/core/fiber.hpp>
+namespace fiber {
 
-namespace fiber::core {
+void Yield();
 
-void Yield() {
-  Fiber::Self().Yield();
-}
-
-}  // namespace fiber::core
+}  // namespace fiber

@@ -5,7 +5,7 @@
 #include "scheduler.hpp"
 #include "stack.hpp"
 
-namespace fiber::core {
+namespace fiber {
 
 // Fiber = stackful coroutine + scheduler
 
@@ -32,4 +32,4 @@ class Fiber : private TaskBase {
   Coroutine coroutine_;
 };
 
-}  // namespace fiber::core
+}  // namespace fiber

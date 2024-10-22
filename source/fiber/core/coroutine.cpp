@@ -6,7 +6,7 @@
 #include <wheels/core/panic.hpp>
 #include <wheels/core/exception.hpp>
 
-namespace fiber::core {
+namespace fiber {
 
 Coroutine::Coroutine(ITask* task)
     : task_(task),
@@ -42,4 +42,4 @@ bool Coroutine::IsCompleted() const {
   return is_completed_;
 }
 
-}  // namespace fiber::core
+}  // namespace fiber
